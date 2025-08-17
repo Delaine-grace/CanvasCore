@@ -3,7 +3,7 @@
 
 ## Overview
 In a competitive talent market, recruitment requires more than filling vacancies — it demands precision matching, efficient workflows, and actionable insights.  
-This open-source platform fuses an **Applicant Tracking System (ATS)** with a **Customer Relationship Management (CRM)** tool into a single, high-performance solution. Leveraging **AI-driven candidate-role matching**, **natural language processing**, and **real-time analytics**, it enables recruiters to focus on relationships rather than repetitive tasks.
+This open-source platform fuses an **Applicant Tracking System (ATS)** with a **Customer Relationship Management (CRM)** tool into a single, high-performance solution. Leveraging **AI-driven candidate-role matching**, **natural language processing**, and **real-time analytics**, it enables recruiters to focus on relationships rather than repetitive tasks. An authentic communication model is created for interaction with messaging and emails for candidates & recruiters, recruiters & Hiring Managers, Clients & Hiring Managers to keep the lines of communication open and transparent. 
 
 Built with a lean, modern stack, the system is optimized for rapid deployment, scalability, and extensibility — without sacrificing performance or compliance.
 
