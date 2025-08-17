@@ -31,6 +31,18 @@ Built with a lean, modern stack, the system is optimized for rapid deployment, s
 
 ---
 
+## Core features for the MVP
+
+ATS: Multi-stage pipelines; bulk actions; interview scheduling placeholders; offer tracking; SLA timers; ageing and inactivity flags.
+
+CRM: Accounts/Contacts; role briefs; activity timeline; tasks/reminders; simple Kanban for opportunities.
+
+Search & match: Basic text + tag search; shortlist generator; duplicate candidate resolver.
+
+Reporting: Funnel conversion, time-to-fill, offer acceptance, source quality, recruiter activity; “aging by stage” heatmap.
+
+Compliance: Consent flag, opt-out log, redact function for test data.
+
 ## Installation
 ```bash
 # Clone repository
