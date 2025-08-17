@@ -34,13 +34,12 @@ Built with a lean, modern stack, the system is optimized for rapid deployment, s
 ## Installation
 ```bash
 # Clone repository
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/Delaine-grace/CanvasCore.git
+cd CanvasCore
 
 # Create virtual environment
 python -m venv venv
 source venv/bin/activate  # Mac/Linux
-venv\Scripts\activate     # Windows
 
 # Install dependencies
 pip install -r requirements.txt
