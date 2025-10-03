@@ -65,8 +65,6 @@ streamlit run app.py
 ```
 ## CanvasCore ERD
 
-## CanvasCore ERD
-
 ![CanvasCore ERD](docs/ERD.png)
 
 **Description:**  
