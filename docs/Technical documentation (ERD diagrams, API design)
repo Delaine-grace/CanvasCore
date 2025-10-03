@@ -1,1 +1,98 @@
+// =======================
+// ATS Entities (Blue)
+// =======================
+Table candidates {
+  id int [pk, increment]
+  name varchar(100)
+  email varchar(255) [unique]
+  phone varchar(20)
+  skills text
+  status varchar(50)
+  consent_flag boolean
+  opt_out boolean [default: false]
+  redacted boolean [default: false]
+}
+// table_color: #3B82F6
+// Note: Candidate PII fields (email, phone) are GDPR-sensitive. Consent and redacted fields ensure compliance.
+
+Table jobs {
+  id int [pk, increment]
+  title varchar(100)
+  description text
+  status varchar(50)
+  client_id int [ref: > clients.id]
+  recruiter_id int [ref: > recruiters.id]
+  hiring_manager_id int [ref: > hiring_managers.id]
+}
+// table_color: #3B82F6
+
+Table applications {
+  id int [pk, increment]
+  candidate_id int [ref: > candidates.id]
+  job_id int [ref: > jobs.id]
+  stage varchar(50)
+  applied_at datetime
+}
+// table_color: #3B82F6
+
+// =======================
+// CRM Entities (Green)
+// =======================
+Table clients {
+  id int [pk, increment]
+  name varchar(100)
+  sector varchar(100)
+  location varchar(100)
+}
+// table_color: #10B981
+
+Table recruiters {
+  id int [pk, increment]
+  name varchar(100)
+  email varchar(255)
+  role varchar(50)
+}
+// table_color: #10B981
+
+Table hiring_managers {
+  id int [pk, increment]
+  name varchar(100)
+  email varchar(255)
+  department varchar(100)
+  client_id int [ref: > clients.id]
+}
+// table_color: #10B981
+
+// =======================
+// Candidate Engagement / Comms (Orange)
+// =======================
+Table surveys {
+  id int [pk, increment]
+  candidate_id int [ref: > candidates.id]
+  job_id int [ref: > jobs.id]
+  feedback text
+  rating int
+  created_at datetime
+  redacted boolean [default: false]
+}
+// table_color: #F59E0B
+// Note: Surveys contain GDPR-sensitive feedback, redacted field allows removal if needed.
+
+
+Table chats {
+  id int [pk, increment]
+  candidate_id int [ref: > candidates.id]
+  recruiter_id int [ref: > recruiters.id]
+  job_id int [ref: > jobs.id]
+  channel varchar(50)
+  engagement_type varchar(50)
+  message text
+  timestamp datetime
+  scheduled_at datetime
+  sentiment_score double
+  redacted boolean
+}
+// table_color: #F59E0B
+
+
 
