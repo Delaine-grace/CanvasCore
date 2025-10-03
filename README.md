@@ -65,12 +65,14 @@ streamlit run app.py
 ```
 ## CanvasCore ERD
 
-![CanvasCore ERD](Technical documentation/ERD/erd.png)
+## CanvasCore ERD
+
+![CanvasCore ERD](docs/ERD.png)
 
 **Description:**  
 This ERD illustrates the CanvasCore platform, showing ATS entities (Candidates, Jobs, Applications), CRM entities (Clients, Recruiters, Hiring Managers), and Candidate Engagement (Chats, Surveys).  
 
-It demonstrates innovative CRM-style engagement and incorporates **GDPR-compliant fields** (`consent_flag`, `opt_out`, `redacted`) for secure handling of candidate data. Sensitive information like emails, phone numbers, and messages are encrypted. Color coding distinguishes ATS (blue), CRM (green), and Candidate Engagement (orange) entities.
+It demonstrates innovative CRM-style engagement and incorporates GDPR-compliant fields (`consent_flag`, `opt_out`, `redacted`) for secure handling of candidate data. Sensitive information like emails, phone numbers, and messages are encrypted. Color coding distinguishes ATS (blue), CRM (green), and Candidate Engagement (orange) entities.
 
 
 This project is licensed under the [MIT License](LICENSE).
